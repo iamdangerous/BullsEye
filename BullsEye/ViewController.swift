@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var targetLabel:UILabel!
     @IBOutlet weak var scoreLabel:UILabel!
     @IBOutlet weak var roundLabel:UILabel!
+    @IBOutlet weak var startOverBtn:UIButton!
     var targetValue = 0
     var score = 0
     var currentRound = 0
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         currentValue = lroundf(slider.value)
-        startNewRound()
+        performStartOver()
     }
     
     func updateLabels(){
@@ -47,6 +48,16 @@ class ViewController: UIViewController {
     
     @IBAction func sliderMOved(_ slider: UISlider) {
         currentValue = lroundf(slider.value)
+    }
+    
+    @IBAction func performStartOver(){
+        score = 0
+        currentValue = 50
+        currentRound = 0
+        targetValue = 0
+        
+        updateLabels()
+        startNewRound()
     }
     
     @IBAction func showHelloAlert(){
@@ -90,7 +101,7 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
         
-    
+     
     }
     
     
