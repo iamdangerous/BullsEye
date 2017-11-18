@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         currentValue = lroundf(slider.value)
         performStartOver()
+        
+        //set image to slider
     }
     
     func updateLabels(){
