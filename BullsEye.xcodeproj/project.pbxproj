@@ -13,6 +13,7 @@
 		0B5FE66F1FBB62CD00DDE075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5FE66E1FBB62CD00DDE075 /* Assets.xcassets */; };
 		0B5FE6721FBB62CD00DDE075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5FE6701FBB62CD00DDE075 /* LaunchScreen.storyboard */; };
 		0BE75D9C1FBF6942003393B8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE75D9B1FBF6942003393B8 /* AboutViewController.swift */; };
+		0BE75D9E1FBFEF79003393B8 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE75D9D1FBFEF79003393B8 /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0B5FE6711FBB62CD00DDE075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B5FE6731FBB62CD00DDE075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BE75D9B1FBF6942003393B8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		0BE75D9D1FBFEF79003393B8 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0B5FE6671FBB62CD00DDE075 /* AppDelegate.swift */,
 				0B5FE6691FBB62CD00DDE075 /* ViewController.swift */,
 				0BE75D9B1FBF6942003393B8 /* AboutViewController.swift */,
+				0BE75D9D1FBFEF79003393B8 /* AboutMeViewController.swift */,
 				0B5FE66B1FBB62CD00DDE075 /* Main.storyboard */,
 				0B5FE66E1FBB62CD00DDE075 /* Assets.xcassets */,
 				0B5FE6701FBB62CD00DDE075 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				0BE75D9C1FBF6942003393B8 /* AboutViewController.swift in Sources */,
 				0B5FE66A1FBB62CD00DDE075 /* ViewController.swift in Sources */,
+				0BE75D9E1FBFEF79003393B8 /* AboutMeViewController.swift in Sources */,
 				0B5FE6681FBB62CD00DDE075 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
