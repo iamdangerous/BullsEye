@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5D74421FC176BC0083F59C /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 0B5D74411FC176BC0083F59C /* BullsEye.html */; };
 		0B5FE6681FBB62CD00DDE075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5FE6671FBB62CD00DDE075 /* AppDelegate.swift */; };
 		0B5FE66A1FBB62CD00DDE075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5FE6691FBB62CD00DDE075 /* ViewController.swift */; };
 		0B5FE66D1FBB62CD00DDE075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5FE66B1FBB62CD00DDE075 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B5D74411FC176BC0083F59C /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		0B5FE6641FBB62CD00DDE075 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5FE6671FBB62CD00DDE075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B5FE6691FBB62CD00DDE075 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		0B5FE6661FBB62CD00DDE075 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				0B5D74411FC176BC0083F59C /* BullsEye.html */,
 				0B5FE6671FBB62CD00DDE075 /* AppDelegate.swift */,
 				0B5FE6691FBB62CD00DDE075 /* ViewController.swift */,
 				0BE75D9B1FBF6942003393B8 /* AboutViewController.swift */,
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B5FE6721FBB62CD00DDE075 /* LaunchScreen.storyboard in Resources */,
+				0B5D74421FC176BC0083F59C /* BullsEye.html in Resources */,
 				0B5FE66F1FBB62CD00DDE075 /* Assets.xcassets in Resources */,
 				0B5FE66D1FBB62CD00DDE075 /* Main.storyboard in Resources */,
 			);
