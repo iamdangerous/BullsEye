@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_0" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,14 +21,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="f3x-PT-2k2">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="265"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3O-5T-9Wp">
-                                <rect key="frame" x="58" y="36.5" width="551" height="302"/>
+                                <rect key="frame" x="8.5" y="9" width="551" height="302"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a80-1i-XNg">
                                         <rect key="frame" x="32" y="93" width="8" height="21"/>
@@ -183,14 +183,17 @@
             <objects>
                 <viewController id="O99-o1-KEh" customClass="AboutViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SA4-qw-tlr">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="M2r-gx-uxS">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNR-V0-pLL">
-                                <rect key="frame" x="305.5" y="318" width="56" height="37"/>
+                                <rect key="frame" x="248" y="263" width="72" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="m54-Li-GNb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <state key="normal" title="Close" backgroundImage="Button-Normal">
                                     <color key="titleColor" red="0.37254901960784315" green="0.11764705882352941" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -200,7 +203,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxz-Xg-Ldv">
-                                <rect key="frame" x="483" y="318" width="164" height="37"/>
+                                <rect key="frame" x="348" y="263" width="200" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Aj7-hH-koe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <state key="normal" title="About the author" backgroundImage="Button-Normal">
                                     <color key="titleColor" red="0.37254901960784315" green="0.11764705882352941" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,7 +216,7 @@
                                 </connections>
                             </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUN-Wg-drB">
-                                <rect key="frame" x="20" y="20" width="627" height="290"/>
+                                <rect key="frame" x="20" y="20" width="528" height="235"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -244,43 +250,72 @@
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" id="NHs-tX-vDD" customClass="AboutMeViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NhG-aU-VvM">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Rahul Lohra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdr-wC-wO4">
-                                <rect key="frame" x="213" y="20" width="142" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="RyJ-ZP-oLW">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Rahul Lohra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdr-wC-wO4">
+                                <rect key="frame" x="189" y="20" width="190" height="25"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="rgU-vn-9xh">
-                                <rect key="frame" x="397" y="57" width="151" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxo-qJ-Tvc">
-                                <rect key="frame" x="265" y="270" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Close"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxo-qJ-Tvc">
+                                <rect key="frame" x="244" y="273" width="80" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2da-CI-ihQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="Close" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.37647058823529411" green="0.13725490196078433" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="closeTapped:" destination="NHs-tX-vDD" eventType="touchUpInside" id="GDN-Hi-DSz"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Rahul Lohra is an Associate Android Developer and currently working with Sd2Labs as an Android Developer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x0x-oP-tP1">
-                                <rect key="frame" x="20" y="57" width="369" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rahul Lohra is an Associate Android Developer and currently working with Sd2Labs as an Android Developer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x0x-oP-tP1">
+                                <rect key="frame" x="20" y="61" width="418" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="R25-l4-cd1"/>
+                                    <constraint firstAttribute="width" constant="418" id="nau-rg-am6"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="rgU-vn-9xh">
+                                <rect key="frame" x="448" y="57" width="100" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="DOb-3E-GSv"/>
+                                    <constraint firstAttribute="width" constant="100" id="RV0-H2-VE5"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RyJ-ZP-oLW" firstAttribute="top" secondItem="ZID-7F-iLe" secondAttribute="top" id="4g5-Tp-N9J"/>
+                            <constraint firstItem="rgU-vn-9xh" firstAttribute="leading" secondItem="x0x-oP-tP1" secondAttribute="trailing" constant="10" id="D4Q-LC-Iwg"/>
+                            <constraint firstItem="Kxo-qJ-Tvc" firstAttribute="centerX" secondItem="NhG-aU-VvM" secondAttribute="centerX" id="EZM-QK-bVz"/>
+                            <constraint firstItem="x0x-oP-tP1" firstAttribute="leading" secondItem="NhG-aU-VvM" secondAttribute="leadingMargin" id="GFV-fy-ggZ"/>
+                            <constraint firstAttribute="trailing" secondItem="RyJ-ZP-oLW" secondAttribute="trailing" id="JkR-s1-1xQ"/>
+                            <constraint firstItem="RyJ-ZP-oLW" firstAttribute="leading" secondItem="ZID-7F-iLe" secondAttribute="leading" id="P2G-cH-Equ"/>
+                            <constraint firstAttribute="bottom" secondItem="Kxo-qJ-Tvc" secondAttribute="bottom" constant="10" id="csT-HL-R28"/>
+                            <constraint firstItem="rgU-vn-9xh" firstAttribute="top" secondItem="NhG-aU-VvM" secondAttribute="topMargin" constant="57" id="gog-BH-om1"/>
+                            <constraint firstAttribute="bottom" secondItem="RyJ-ZP-oLW" secondAttribute="bottom" id="jzb-Ra-1ei"/>
+                            <constraint firstItem="Fdr-wC-wO4" firstAttribute="top" secondItem="NhG-aU-VvM" secondAttribute="topMargin" constant="20" id="k0Y-he-O94"/>
+                            <constraint firstAttribute="trailing" secondItem="rgU-vn-9xh" secondAttribute="trailing" constant="20" id="rEa-bC-zma"/>
+                            <constraint firstItem="Fdr-wC-wO4" firstAttribute="centerX" secondItem="NhG-aU-VvM" secondAttribute="centerX" id="wN5-XM-iCD"/>
+                            <constraint firstItem="x0x-oP-tP1" firstAttribute="top" secondItem="Fdr-wC-wO4" secondAttribute="bottom" constant="16" id="xbs-os-HAn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZID-7F-iLe"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKL-bL-evT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1560.2112676056338" y="112.5"/>
+            <point key="canvasLocation" x="1559.3703148425789" y="111.2"/>
         </scene>
     </scenes>
     <resources>
